@@ -27,3 +27,8 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
   Resolver.typesafeRepo("releases")
 )
+
+libraryDependencies ++= Seq(
+  "com.evojam" %% "mongodb-evolutions-scala" % "0.1.0-SNAPSHOT",
+  "com.typesafe.play" %% "play" % "2.3.9"
+)
