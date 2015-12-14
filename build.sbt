@@ -29,6 +29,6 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.evojam" %% "mongodb-evolutions-scala" % "0.2.0-SNAPSHOT",
+  "com.evojam" %% "mongodb-evolutions-scala" % "0.2.0-scalaz-7.1-SNAPSHOT",
   "com.typesafe.play" %% "play" % "2.4.6"
 )
