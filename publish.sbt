@@ -1,4 +1,12 @@
+import scala.util.Properties
+
 publishMavenStyle := true
+
+credentials += Credentials(
+  "Sonatype Nexus Repository Manager",
+  "oss.sonatype.org",
+  Properties.envOrElse("SONATYPE_USERNAME", ""),
+  Properties.envOrElse("SONATYPE_PASSWORD", ""))
 
 publishTo := {
   val nexus = "https://oss.sonatype.org/"
